@@ -1,0 +1,11 @@
+extends layout
+
+block content
+  h1= title 
+  br
+  a(href='/new') New
+  each message in messages 
+    br
+    h1 #{message.text}
+    
+    h4 #{message.user}
